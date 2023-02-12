@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Vida con Perros</title>
+    <!-- Favicon -->
+    <link rel="icon" href="icons/logo_newGreenSF.png">
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <!-- CSS Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Marco -->
+    <div class="marco">
+        <!-- Header -->
+        <header>
+            <!-- Menu -->
+            <div class="header_mob">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="icons/logo_newWhiteSF.png" alt="">
+                    <h1>Vida con Perros</h1>
+                </a>
+                <nav  class="menu">
+                    <ul class="navegador">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="adopcion.html">En adopción</a>
+                        </li>
+                        <li>
+                            <a href="colabora.html">Colabora</a>
+                                <ul class="dropdown_colab">
+                                    <li>
+                                        <a href="colabora.html/#voluntariado">Voluntariado</a>
+                                    </li>
+                                    <li>
+                                        <a href="colabora.html/#donaciones">Donaciones</a>
+                                    </li>
+                                    <li>
+                                        <a href="tienda.html">Tienda solidaria</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="nosotros.html">Nosotros</a>
+                                <ul class="dropdown_nos">
+                                    <li>
+                                        <a href="nosotros.html/#clinica">Clínica San Esteban</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="dudas.html">Dudas</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Fin menu -->
+        </header>
+        <!-- Fin header -->
+        
+        <!-- Secciones -->
+            <!-- Seccion 1 -->
+            <section class="s1">
+                <h4>Contacto</h4>
+                <div class="s1_text">
+                    <p>Rogamos se pongan en contacto siempre por email, el número de contactos es muy alto y nuestros voluntarios hacen un gran esfuerzo por contestar lo antes posible.</p>
+                    <p>Adelantará su adopción si nos envía el cuestionario relleno.</p>
+                    <a href="docs/Cuestionario Preadopción.doc" download="Cuestionario Preadopción.doc">Descargar cuestionario</a>
+                </div>
+                <div class="formu">
+                    <form action="mailto:vidaconperros@hotmail.com" name="contacto" method="post" enctype="text/plain">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Teléfono" required>
+                        <textarea type="text" placeholder="Escribe aquí tu mensaje"></textarea>
+                        <div class="priv">
+                            <input type="checkbox" name="privacidad" id="privacidad">
+                            <p>
+                                He leído y acepto la <a href="privacidad.html">política de privacidad</a>
+                            </p> 
+                        </div>
+                            
+                        <button type="submit"><p>Enviar</p></button>
+                    </form>
+                </div>
+            </section>
+            <!-- Fin seccion 1 -->
+        <!-- Fin secciones -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="contacto">
+                <ul>
+                    <li class="sobre">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"/></svg>
+                        <span>vidaconperros@hotmail.com</span>
+                    </li>
+                    <li class="localizacion">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg>
+                        <span>c/Torrejón 4, Fuenlabrada, Madrid (Clínica Veterinaria)</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="privacidad">
+                <a href="privacidad.html">Política de privacidad</a>
+            </div>
+            <nav class="rrss">
+                <a href="https://www.instagram.com/vidaconperros/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCvGiJd_cQvh0Y12pHgMHM5Q/featured">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/groups/VidaconPerros/">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </nav>
+        </footer>
+
+        <!-- Fin footer -->
+
+    </div>
+    <!-- Fin marco -->
+    
+</body>
+</html>
