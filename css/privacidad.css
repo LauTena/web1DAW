@@ -1,0 +1,111 @@
+/* Reglas Especificas */
+.s1{
+    margin: 6%;
+    text-align: justify;
+}
+.s1 h4{
+    color: #386641;
+    padding: 2%;
+    border: 3px solid #386641;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.s1 h6{
+    font-size: 16px;
+    color: #386641;
+}
+.s1 p{
+    margin-block: 10px;
+}
+.s1 span{
+    color: #6a994e;
+}
+.s1 li{
+    margin-left: 10px;
+}
+/* Responsive */
+    /* Media Tablet (768px) */
+    @media (min-width: 768px){
+        /* Generales */
+        p, span{
+            font-size: 16px !important;
+        }
+        /* Header */
+        .header_mob{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .logo{
+            width: 40%;
+            padding-left: 35px;
+        }
+        .logo img{
+            width: 150px;
+            height: 150px;
+        }
+        .logo h1{
+            font-size: 42px;
+            line-height: 30px;
+        }
+        .menu{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        .menu ul{
+            width: 100%;
+            margin: auto;
+        }
+        .navegador li{
+            width: 130px;
+            height: 50px;
+        }
+        .navegador a{
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+        }
+        /* Footer */
+        footer{
+            display: flex;
+            flex-direction: row;
+        }
+        footer p, span{
+            color: #fbfbfb;
+        }
+        footer a{
+            font-size: 18px !important;
+            font-family: NotoSans_Regular;
+        }
+        .contacto{
+            width: 145%;
+            margin-inline: 3% 2%;
+            margin-bottom: 2%;
+        }
+        .contacto img{
+            width: 22px;
+        }
+        .privacidad{
+            margin-inline-start: 0%;
+        }
+        .rrss i {
+            font-size: 48px;
+        }
+    }
+    /* Media Ordenador (1280px) */
+    @media (min-width: 1280px){
+        p, span{
+            font-size: 20px !important;
+        }
+        .s1 h6 {
+            font-size: 24px;
+        }
+        .s1 h4{
+            font-size: 35px;
+        }
+    }
+    

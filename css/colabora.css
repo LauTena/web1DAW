@@ -1,0 +1,218 @@
+/* Reglas Especificas */
+.titulo h4{
+    color: #386641;
+    padding: 2%;
+    border: 3px solid #386641;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin: 6%;
+}
+    /* Seccion 1 */
+    .voluntariado{
+        margin: 6%;
+        text-align: justify;
+    }
+    .voluntariado h5{
+        color: #6a994e;
+        text-decoration: 2px underline;
+    }
+    .voluntariado p{
+        margin-block: 10px;
+    }
+    .voluntariado span{
+        color: #6a994e;
+    }
+    .voluntariado a{
+        color: #386641;
+        border: 2px solid #386641;
+        width: 200px;
+        font-size: 14px;
+    }
+    .voluntariado ul{
+        width: 100%;
+        list-style: circle !important;
+    }
+    .voluntariado li{
+        margin-left: 20px;
+    }
+
+    /* Seccion 2 */
+    .donaciones{
+        margin: 6%;
+        text-align: justify;
+        margin-top: 35px;
+    }
+    .donaciones h5{
+        color: #6a994e;
+        text-decoration: 2px underline;
+    }
+    .donaciones h6{
+        color: #386641;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .donaciones p{
+        margin-block: 10px;
+    }
+    .asociacion{
+        color: #386641 !important;
+    }
+    .donaciones a{
+        font-size: 14px;
+        color: #6a994e;
+        margin-block: 5px;
+        text-align: center;
+    }
+    .ayuda{
+        color: #386641;
+        text-align: center;
+        margin-top: 30px !important;
+    }
+    /* Seccion 3 */
+    .tienda{
+        margin: 6%;
+        text-align: justify;
+        margin-top: 35px;
+    }
+    .tienda h5{
+        color: #6a994e;
+        text-decoration: 2px underline;
+    }
+    .tienda svg{
+        width: 125px;
+        height: 125px;
+        fill: #6a994e;
+        border: 2px solid #386641;
+        padding: 2%;
+        margin-block: 10px;
+    }
+
+/* Responsive */
+    /* Media Tablet (768px) */
+    @media (min-width: 768px){
+        /* Generales */
+        p, span{
+            font-size: 16px !important;
+        }
+        /* Header */
+        .header_mob{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .logo{
+            width: 40%;
+            padding-left: 35px;
+        }
+        .logo img{
+            width: 150px;
+            height: 150px;
+        }
+        .logo h1{
+            font-size: 42px;
+            line-height: 30px;
+        }
+        .menu{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        .menu ul{
+            width: 100%;
+            margin: auto;
+        }
+        .navegador li{
+            width: 130px;
+            height: 50px;
+        }
+        .navegador a{
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+        }
+        /* Secciones */
+        .titulo h4{
+            font-size: 35px;
+        }
+        :is(.voluntariado,.donaciones,.tienda) h5{
+            font-size: 30px;
+        }
+        .voluntariado a{
+            margin-block: 25px;
+            margin-inline: auto;
+        }
+        .voluntariado li{
+            margin-left: 45px;
+        }
+        :is(.teaming, .banco) h6{
+            font-size: 25px;
+        }
+        .teaming a{
+            font-size: 16px;
+        }
+        .tienda svg{
+            width: 180px;
+            height: 180px;
+        }
+        /* Footer */
+        footer{
+            display: flex;
+            flex-direction: row;
+        }
+        footer p, span{
+            color: #fbfbfb;
+        }
+        footer a{
+            font-size: 18px !important;
+            font-family: NotoSans_Regular;
+        }
+        .contacto{
+            width: 145%;
+            margin-inline: 3% 2%;
+            margin-bottom: 2%;
+        }
+        .contacto img{
+            width: 22px;
+        }
+        .privacidad{
+            margin-inline-start: 0%;
+        }
+        .rrss i {
+            font-size: 48px;
+        }
+    }
+    /* Media Ordenador (1280px) */
+    @media (min-width: 1280px){
+        p, span{
+            font-size: 20px !important;
+        }
+        .voluntariado a{
+            width: 263px;
+            font-size: 20px;
+        }
+        .teaming a{
+            font-size: 20px;
+        }
+        .tienda{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .tienda h5{
+            width: 100%;
+            margin-bottom: 2%;
+        }
+        .tienda a{
+            margin-inline: 12%;
+        }
+        .tienda svg{
+            width: 250px;
+            height: 250px;
+        }
+        .tienda p{
+            margin-block: auto;
+        }
+    }
+   

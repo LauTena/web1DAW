@@ -1,0 +1,154 @@
+/* Reglas Especificas */
+h4{
+    color: #386641;
+    padding: 2%;
+    border: 3px solid #386641;
+    border-radius: 5px;
+    margin: 6%;
+}
+.s1, .s2{
+    margin: 6%;
+}
+
+:is(.s1, .s2) h5{
+    color: #6a994e;
+    text-decoration: 2px underline;
+}
+:is(.s1, .s2) p{
+    margin-block: 10px;
+    text-align: justify;
+}
+    
+     /* Seccion 2 */
+    .s2 h6{
+        color: #386641;
+        display: flex;
+        justify-content: center;
+    }
+    .ventajas span{
+        color: #6a994e;
+        font-family: NotoSans_Regular;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+    .direccion, .horario, .esterilizacion{
+        margin-top: 30px;
+    }
+    .direccion iframe{
+        width: 280px;
+        height: 150px;
+    }
+    .citas{
+        margin-bottom: 20px;
+    }
+    .ventajas ul{
+        width: 100%;
+        list-style: circle !important;
+    }
+    .ventajas li{
+        margin-left: 15px;
+    }
+/* Responsive */
+    /* Media Tablet (768px) */
+    @media (min-width: 768px){
+        /* Generales */
+        p, span{
+            font-size: 16px !important;
+        }
+        /* Header */
+        .header_mob{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .logo{
+            width: 40%;
+            padding-left: 35px;
+        }
+        .logo img{
+            width: 150px;
+            height: 150px;
+        }
+        .logo h1{
+            font-size: 42px;
+            line-height: 30px;
+        }
+        .menu{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        .menu ul{
+            width: 100%;
+            margin: auto;
+        }
+        .navegador li{
+            width: 130px;
+            height: 50px;
+        }
+        .navegador a{
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+        }
+        /* Secciones */
+        h4{
+            font-size: 35px;
+        }
+        :is(.s1, .s2) h5{
+            font-size: 30px;
+        }
+        :is(.hembras, .machos) li{
+            margin-left: 45px;
+        }
+        .clinica_text h6{
+            font-size: 25px;
+        }
+        .direccion iframe{
+            width: 678px;
+            height: 325px;
+        }
+        /* Footer */
+        footer{
+            display: flex;
+            flex-direction: row;
+            color: #fbfbfb;
+        }
+        footer a{
+            font-size: 18px !important;
+            font-family: NotoSans_Regular;
+        }
+        .contacto{
+            width: 145%;
+            margin-inline: 3% 2%;
+            margin-bottom: 2%;
+        }
+        .contacto img{
+            width: 22px;
+        }
+        .privacidad{
+            margin-inline-start: 0%;
+        }
+        .rrss i {
+            font-size: 48px;
+        }
+    }
+    /* Media Ordenador (1280px) */
+    @media (min-width: 1280px){
+        p, span{
+            font-size: 20px !important;
+        }
+        .direccion_desk{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .direccion_desk p{
+            width: 39%;
+            margin-block: auto;
+            padding-inline: 4%;
+        }
+    }
+   

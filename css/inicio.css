@@ -1,0 +1,337 @@
+/* Reglas Especificas */
+.bienvenida{
+    margin: 6%;
+}
+.bienvenida h4{
+    color: #6a994e;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.bienvenida span{
+    font-family: Itim;
+    font-size: 40px;
+    color: #386641;
+}
+.s1,.s2{
+    margin: 6%;
+}
+
+    /* Seccion 1 */
+    
+    .mision h5{
+        color: #6a994e;
+        text-align: center;
+    }
+    .slide {
+        position: relative;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+        margin-top: 26px;
+        height: 415px;
+    }
+    .slide-inner {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    .slide-open:checked + .slide-item {
+        position: static;
+        opacity: 100;
+    }
+    .slide-item {
+        position: absolute;
+        opacity: 0;
+        -webkit-transition: opacity 0.6s ease-out;
+        transition: opacity 0.6s ease-out;
+    }
+    .slide-item img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+    .slide-control {
+        background: rgba(0, 0, 0, 0.28);
+        border-radius: 50%;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+        font-size: 40px;
+        height: 40px;
+        line-height: 35px;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        cursor: pointer;
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        text-align: center;
+        width: 40px;
+        z-index: 10;
+    }
+    .slide-control.prev {
+        left: 2%;
+    }
+    .slide-control.next {
+        right: 2%;
+    }
+    .slide-control:hover {
+        background: rgba(0, 0, 0, 0.8);
+        color: #aaaaaa;
+    }
+    #slide-1:checked ~ .control-1, 
+    #slide-2:checked ~ .control-2, 
+    #slide-3:checked ~ .control-3, 
+    #slide-4:checked ~ .control-4, 
+    #slide-5:checked ~ .control-5, 
+    #slide-6:checked ~ .control-6, 
+    #slide-7:checked ~ .control-7, 
+    #slide-8:checked ~ .control-8, 
+    #slide-9:checked ~ .control-9,
+    #slide-10:checked ~ .control-10, 
+    #slide-11:checked ~ .control-11, 
+    #slide-12:checked ~ .control-12, 
+    #slide-13:checked ~ .control-13, 
+    #slide-14:checked ~ .control-14, 
+    #slide-15:checked ~ .control-15, 
+    #slide-16:checked ~ .control-16, 
+    #slide-17:checked ~ .control-17, 
+    #slide-18:checked ~ .control-18, 
+    #slide-19:checked ~ .control-19, 
+    #slide-20:checked ~ .control-20, 
+    #slide-21:checked ~ .control-21, 
+    #slide-22:checked ~ .control-22, 
+    #slide-23:checked ~ .control-23, 
+    #slide-24:checked ~ .control-24, 
+    #slide-25:checked ~ .control-25, 
+    #slide-26:checked ~ .control-26, 
+    #slide-27:checked ~ .control-27{
+        display: block;
+    }
+    .slide-indicador {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 2%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 10;
+    }
+    .slide-indicador li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    .slide-circulo {
+        color: #828282;
+        cursor: pointer;
+        display: block;
+        font-size: 35px;
+    }
+    .slide-circulo:hover {
+        color: #aaaaaa;
+    }
+    #slide-1:checked ~ .control-1 ~ .slide-indicador 
+         li:nth-child(1) .slide-circulo,
+    #slide-2:checked ~ .control-2 ~ .slide-indicador 
+          li:nth-child(2) .slide-circulo,
+    #slide-3:checked ~ .control-3 ~ .slide-indicador 
+          li:nth-child(3) .slide-circulo
+    #slide-4:checked ~ .control-4 ~ .slide-indicador 
+          li:nth-child(4) .slide-circulo
+    #slide-5:checked ~ .control-5 ~ .slide-indicador 
+          li:nth-child(5) .slide-circulo
+    #slide-6:checked ~ .control-6 ~ .slide-indicador 
+          li:nth-child(6) .slide-circulo
+    #slide-7:checked ~ .control-7 ~ .slide-indicador 
+          li:nth-child(7) .slide-circulo
+    #slide-8:checked ~ .control-8 ~ .slide-indicador 
+          li:nth-child(8) .slide-circulo
+    #slide-9:checked ~ .control-9 ~ .slide-indicador 
+          li:nth-child(9) .slide-circulo
+    #slide-10:checked ~ .control-10 ~ .slide-indicador 
+          li:nth-child(10) .slide-circulo 
+    #slide-11:checked ~ .control-11 ~ .slide-indicador 
+          li:nth-child(11) .slide-circulo      
+    #slide-12:checked ~ .control-12 ~ .slide-indicador 
+          li:nth-child(12) .slide-circulo
+    #slide-13:checked ~ .control-13 ~ .slide-indicador 
+          li:nth-child(13) .slide-circulo
+    #slide-14:checked ~ .control-14 ~ .slide-indicador 
+          li:nth-child(14) .slide-circulo
+    #slide-15:checked ~ .control-15 ~ .slide-indicador 
+          li:nth-child(15) .slide-circulo
+    #slide-16:checked ~ .control-16 ~ .slide-indicador 
+          li:nth-child(16) .slide-circulo
+    #slide-17:checked ~ .control-17 ~ .slide-indicador 
+          li:nth-child(17) .slide-circulo
+    #slide-18:checked ~ .control-18 ~ .slide-indicador 
+          li:nth-child(18) .slide-circulo
+    #slide-19:checked ~ .control-19 ~ .slide-indicador 
+          li:nth-child(19) .slide-circulo
+    #slide-20:checked ~ .control-20 ~ .slide-indicador 
+          li:nth-child(20) .slide-circulo
+    #slide-21:checked ~ .control-21 ~ .slide-indicador 
+          li:nth-child(21) .slide-circulo
+    #slide-22:checked ~ .control-22 ~ .slide-indicador 
+          li:nth-child(22) .slide-circulo
+    #slide-23:checked ~ .control-23 ~ .slide-indicador 
+          li:nth-child(23) .slide-circulo
+    #slide-24:checked ~ .control-24 ~ .slide-indicador 
+          li:nth-child(24) .slide-circulo
+    #slide-25:checked ~ .control-25 ~ .slide-indicador 
+          li:nth-child(25) .slide-circulo
+    #slide-26:checked ~ .control-26 ~ .slide-indicador 
+          li:nth-child(26) .slide-circulo
+    #slide-27:checked ~ .control-27 ~ .slide-indicador 
+          li:nth-child(27) .slide-circulo{
+        color: #6a994e;
+    }
+    
+    /* Seccion 2 */
+    .jornadas{
+        width: 100%;
+    }
+    .jornadas h5{
+        color: #6a994e;
+    }
+    .jornadas p{
+        margin-block: 10px;
+    }
+    .jornadas span{
+        color: #6a994e;
+    }
+    .cancelado{
+        text-align: center;
+    }
+    .direccion iframe{
+        width: 280px;
+        height: 150px;
+    }
+/* Responsive */
+    /* Media Tablet (768px) */
+    @media (min-width: 768px){
+        /* Generales */
+        p, span{
+            font-size: 16px !important;
+        }
+        /* Header */
+        .header_mob{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .logo{
+            width: 40%;
+            padding-left: 35px;
+        }
+        .logo img{
+            width: 150px;
+            height: 150px;
+        }
+        .logo h1{
+            font-size: 42px;
+            line-height: 30px;
+        }
+        .menu{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        .menu ul{
+            width: 100%;
+            margin: auto;
+        }
+        .navegador li{
+            width: 130px;
+            height: 50px;
+        }
+        .navegador a{
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+        }
+        /* Secciones */
+        .bienvenida{
+            text-align: justify;
+        }
+        .bienvenida h4{
+            font-size: 40px;
+        }
+        .bienvenida span{
+            font-size: 50px !important;
+        }
+        :is(.s1, .s2) h5{
+            font-size: 30px;
+        }
+            /* Seccion 1 */
+            .slide{
+                height: 700px;
+            }
+            .slide-inner img{
+                margin: auto;
+            }
+            /* Seccion 2 */
+            .direccion iframe{
+                width: 678px;
+                height: 325px;
+            }
+            .cancelado{
+                font-size: 35px;
+            }
+        /* Footer */
+        footer{
+            display: flex;
+            flex-direction: row;
+        }
+        footer p, span{
+            color: #fbfbfb;
+        }
+        footer a{
+            font-size: 18px !important;
+            font-family: NotoSans_Regular;
+        }
+        .contacto{
+            width: 145%;
+            margin-inline: 3% 2%;
+            margin-bottom: 2%;
+        }
+        .contacto img{
+            width: 22px;
+        }
+        .privacidad{
+            margin-inline-start: 0%;
+        }
+        .rrss i {
+            font-size: 48px;
+        }
+    }
+    /* Media Ordenador (1280px) */
+    @media (min-width: 1280px){
+        p, span{
+            font-size: 20px !important;
+        }
+        .bienvenida h4 {
+            font-size: 56px;
+        }
+        .bienvenida span {
+            font-size: 66px !important;
+        }
+        /* Seccion 2 */
+        .direccion{
+            display: flex;
+            justify-content: space-between;
+        }
+        .direccion p{
+            width: 40%;
+            text-align: center;
+            padding-top: 12%;
+        }
+        .cancelado{
+            font-size: 32px !important;
+        }
+    }
+

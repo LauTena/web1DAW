@@ -1,0 +1,145 @@
+/* Reglas Especificas */
+h4{
+    color: #386641;
+    padding: 2%;
+    border: 3px solid #386641;
+    border-radius: 5px;
+    margin: 6%;
+}
+     /* Seccion 1 movil*/
+     .s1_movil{
+        margin: 6%;
+    }
+    .inicio{
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+    .bolsaV, .bolsaB,.camisetaN, .camisetaB, .comederoV, .comederoB,  .tazaV, .tazaB{
+        border: 2px solid #272727;
+        margin-bottom: 20px;
+    }
+    .texto{
+        text-align: justify;
+        margin: 5px;
+    }
+    .galeria_tienda_mov{
+        width: 100%;
+    }
+    .galeria_tienda_mov h6{
+        color: #6a994e;
+        margin-block: 10px;
+    }
+    .galeria_tienda_mov img{
+        margin-left: 14px;
+    }
+    .comprar_mov{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0px 10px 0px;
+    }
+    .comprar_mov button{
+        width: 100px;
+        height: 25px;
+        background-color: #6a994e;
+        border: 1px solid #6a994e;
+        border-radius: 10px;
+    }
+    .comprar_mov button span{
+        color: #fbfbfb;
+    }
+    
+    
+/* Responsive */
+    /* Media Tablet (768px) */
+    @media (min-width: 768px){
+        /* Generales */
+        p, span{
+            font-size: 16px !important;
+        }
+        /* Header */
+        .header_mob{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .logo{
+            width: 40%;
+            padding-left: 35px;
+        }
+        .logo img{
+            width: 150px;
+            height: 150px;
+        }
+        .logo h1{
+            font-size: 42px;
+            line-height: 30px;
+        }
+        .menu{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        .menu ul{
+            width: 100%;
+            margin: auto;
+        }
+        .navegador li{
+            width: 130px;
+            height: 50px;
+        }
+        .navegador a{
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+        }
+        /* Footer */
+        footer{
+            display: flex;
+            flex-direction: row;
+            color: #fbfbfb;
+        }
+        footer a{
+            font-size: 18px !important;
+            font-family: NotoSans_Regular;
+        }
+        .contacto{
+            width: 145%;
+            margin-inline: 3% 2%;
+            margin-bottom: 2%;
+        }
+        .contacto img{
+            width: 22px;
+        }
+        .privacidad{
+            margin-inline-start: 0%;
+        }
+        .rrss i {
+            font-size: 48px;
+        }
+        /*Seccion 1*/
+        .galeria_tienda_mov{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .bolsaV, .bolsaB,.camisetaN, .camisetaB, .comederoV, .comederoB,  .tazaV, .tazaB{
+            margin-inline: 4%;
+            width: 283px;
+        }
+    }
+    /* Media Ordenador (1280px) */
+    @media (min-width: 1280px){
+        p, span{
+            font-size: 20px !important;
+        }
+        .galeria_tienda_mov h6{
+            font-size: 25px;
+        }
+        .comprar_mov button{
+            height: 30px;
+        }
+    }
+    

@@ -1,0 +1,443 @@
+/* Reglas Especificas */
+    /* Seccion 1 */
+    .s1{
+        margin: 6%;
+    }
+    .start h1{
+        color: #386641;
+        padding: 2%;
+        border: 3px solid #386641;
+        border-radius: 5px;
+    }
+    .start{
+        width: 100%;
+    }
+    .start p{
+        margin-block: 10px;
+        text-align: center;
+    }
+    .start a{
+        color: #386641;
+        font-size: 14px;
+        border: thin solid #386641;
+        border-radius: 5px;
+        width: 200px;
+        margin: auto;
+    }
+    .start a:hover {
+        background-color: #6a994e;
+        border: thin solid #6a994e;
+        color: #fbfbfb;
+    }
+    .galerias{
+        margin-top: 15px;
+        text-align: justify;
+    }
+    .galerias h5{
+        color: #6a994e;
+        text-decoration: 2px underline;
+    }
+    .galerias img{
+        width: 280px;
+        height: 350px;
+        border: 2px solid black;
+        margin-bottom: 10px;
+    }
+    .galerias button{
+        width: 80px;
+        border: none;
+        background-color: #fbfbfb;
+        display: flex;
+        justify-self: end;
+    }
+    .galerias label{
+        margin: auto;
+        color: #6a994e;
+    }
+    .galerias input{
+        display: none;
+    }
+    .adultos, .cachorros, .gatos, .cerdos{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        /* Adultos */
+        #ocultar{
+            display: none;
+        }
+        #chk:checked + #ocultar{
+            display: block;
+        }
+        .galeria_adultos{
+            margin-top: 10px;
+        }
+        :is(.alany_text, .alejandro_text, .asdrubal_text, .atalanta_text, .bobbo_text, .coco_text, .cochita_class, .cristiano_text, .dog_text, .gody_text, .ika_text, .jerezana_text, .katu_text, .leo_text, .luz_text, .melk_text, .natasha_text, .roberto_text, .paco_text, .tik_text, .tok_text) p{
+            margin-block: 10px;
+        }
+        /* Cachorros */
+        #ocultar2{
+            display: none;
+        }
+        #chk2:checked + #ocultar2{
+            display: block;
+        }
+        .texto_cachorros p{
+            margin-block: 10px;
+        }
+        .galeria_cachorros img{
+            width: 280px;
+            height: 280px;
+            border: 2px solid black;
+        }
+        .galeria_cachorros span{
+            color: #6a994e;
+        }
+        :is(.vera_text,.douglas_text,.matias_text,.thena_text,.saba_text,.laiza_text,.tiana_text,.trosky_text,.tora_text,.zen_text,.carlitos_text,.kuka_text,.lelia_text,.dr_drones_text,.capone_text,.havock_text,.alaska_text,.indigo_text,.bomsai_text,.banshee_text,.ciclope_text) p{
+            margin-block: 10px;
+        }
+        /* Gatos */
+        #ocultar3{
+            display: none;
+        }
+        #chk3:checked + #ocultar3{
+            display: block;
+        }
+        .slide {
+            position: relative;
+            box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+            margin-top: 26px;
+        }
+        .slide-inner {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 320px;
+        }
+        .slide-open:checked + .slide-item {
+            position: static;
+            opacity: 100;
+        }
+        .slide-item {
+            position: absolute;
+            opacity: 0;
+            -webkit-transition: opacity 0.6s ease-out;
+            transition: opacity 0.6s ease-out;
+        }
+        .slide-item img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+        }
+        .slide-control {
+            background: rgba(0, 0, 0, 0.28);
+            border-radius: 50%;
+            color: #fff;
+            cursor: pointer;
+            display: none;
+            font-size: 40px;
+            height: 40px;
+            line-height: 35px;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translate(0, -50%);
+            cursor: pointer;
+            -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            text-align: center;
+            width: 40px;
+            z-index: 10;
+        }
+        .slide-control.prev {
+            left: 2%;
+        }
+        .slide-control.next {
+            right: 2%;
+        }
+        .slide-control:hover {
+            background: rgba(0, 0, 0, 0.8);
+            color: #aaaaaa;
+        }
+        #slide-1:checked ~ .control-1,
+        #slide-2:checked ~ .control-2,
+        #slide-3:checked ~ .control-3, 
+        #slide-4:checked ~ .control-4, 
+        #slide-5:checked ~ .control-5, 
+        #slide-6:checked ~ .control-6,
+        #slide-7:checked ~ .control-7,
+        #slide-8:checked ~ .control-8{
+            display: block;
+        }
+        .slide-indicador {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            bottom: 2%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 10;
+        }
+        .slide-indicador li {
+            display: inline-block;
+            margin: 0 5px;
+        }
+        .slide-circulo {
+            color: #828282;
+            cursor: pointer;
+            display: block;
+            font-size: 35px;
+        }
+        .slide-circulo:hover {
+            color: #aaaaaa;
+        }
+        #slide-1:checked ~ .control-1 ~ .slide-indicador 
+            li:nth-child(1) .slide-circulo,
+        #slide-2:checked ~ .control-2 ~ .slide-indicador 
+            li:nth-child(2) .slide-circulo,
+        #slide-3:checked ~ .control-3 ~ .slide-indicador 
+            li:nth-child(3) .slide-circulo
+        #slide-4:checked ~ .control-4 ~ .slide-indicador 
+            li:nth-child(4) .slide-circulo
+        #slide-5:checked ~ .control-5 ~ .slide-indicador 
+            li:nth-child(5) .slide-circulo
+        #slide-6:checked ~ .control-6 ~ .slide-indicador 
+            li:nth-child(6) .slide-circulo
+        #slide-7:checked ~ .control-7 ~ .slide-indicador 
+            li:nth-child(7) .slide-circulo
+        #slide-8:checked ~ .control-8 ~ .slide-indicador 
+            li:nth-child(8) .slide-circulo {
+            color: #428bca;
+        }
+        
+        /* Cerdos */
+        #ocultar4{
+            display: none;
+        }
+        #chk4:checked + #ocultar4{
+            display: block;
+        }
+        .galeria_cerdos img{
+            width: 280px;
+            height: 280px;
+            border: 2px solid black;
+        }
+        :is(.galeria_cerdos, .rosita_text) p{
+            margin-block: 10px;
+        }
+    /* Seccion 2 */
+    .s2 {
+        margin: 6%;
+        border: 4px solid #bc4749;
+        padding: 0.5%;
+    }
+    .s2 img{
+        width: 280px;
+        height: 280px;
+    }
+    .s2 p{
+        color: #bc4749;
+        font-weight: 600;
+        text-align: justify;
+        margin-block: 10px;
+    }
+/* Responsive */
+    /* Media Tablet (768px) */
+    @media (min-width: 768px){
+        /* Generales */
+        p, span{
+            font-size: 16px !important;
+        }
+        /* Header */
+        .header_mob{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .logo{
+            width: 40%;
+            padding-left: 35px;
+        }
+        .logo img{
+            width: 150px;
+            height: 150px;
+        }
+        .logo h1{
+            font-size: 42px;
+            line-height: 30px;
+        }
+        .menu{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        .menu ul{
+            width: 100%;
+            margin: auto;
+        }
+        .navegador li{
+            width: 130px;
+            height: 50px;
+        }
+        .navegador a{
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+        }
+        /* Seccion 1 */
+        .s1 h1{
+            font-size: 35px;
+        }
+        .start a{
+            width: 250px;
+            font-size: 18px;
+        }
+        .galerias h5{
+            font-size: 30px;
+        }
+        :is(.adultos, .cachorros, .gatos, .cerdos)button > label{
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+        }
+        .adultos, .cachorros, .gatos, .cerdos{
+            margin-block: 10px;
+        }
+        /* Adultos */
+        :is(.alany, .alejandro, .asdrubal, .atalanta, .bobbo, .coco, .cochita, .cristiano, .dog, .gody, .ika, .jerezana, .katu, .leo, .luz, .melk, .natasha, .roberto, .paco, .tik, .tok){
+            display: flex;
+            margin-block: 15px;
+        }
+        :is(.alany_text, .alejandro_text, .asdrubal_text, .atalanta_text, .bobbo_text, .coco_text, .cochita_class, .cristiano_text, .dog_text, .gody_text, .ika_text, .jerezana_text, .katu_text, .leo_text, .luz_text, .melk_text, .natasha_text, .roberto_text, .paco_text, .tik_text, .tok_text){
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-inline: 10px;
+        }
+        /* Cachorros */
+        :is(.vera,.douglas,.matias,.thena,.saba,.laiza,.tiana,.trosky,.tora,.zen,.carlitos,.kuka,.lelia,.dr_dones,.capone,.havock,.alaska,.indigo,.bomsai,.banshee,.ciclope){
+            display: flex;
+        }
+        :is(.vera_text,.douglas_text,.matias_text,.thena_text,.saba_text,.laiza_text,.tiana_text,.trosky_text,.tora_text,.zen_text,.carlitos_text,.kuka_text,.lelia_text,.dr_dones_text,.capone_text,.havock_text,.alaska_text,.indigo_text,.bomsai_text,.banshee_text,.ciclope_text){
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-inline: 10px;
+        }
+        /* Gatos */
+        .slide-inner{
+            justify-content: center;
+            display: flex;
+        }
+        /* Cerdos */
+        .rosita{
+            display: flex;
+        }
+        .rosita_text{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        /* Seccion 2 */
+        .s2{
+            display: flex;
+        }
+        .s2_text{
+            display: flex;
+            align-content: center;
+            width: 100%;
+            flex-wrap: wrap;
+            margin-inline: 10px;
+        }
+        /* Footer */
+        footer{
+            display: flex;
+            flex-direction: row;
+        }
+        footer p, span{
+            color: #fbfbfb;
+        }
+        footer a{
+            font-size: 18px !important;
+            font-family: NotoSans_Regular;
+        }
+        .contacto{
+            width: 145%;
+            margin-inline: 3% 2%;
+            margin-bottom: 2%;
+        }
+        .contacto img{
+            width: 22px;
+        }
+        .privacidad{
+            margin-inline-start: 0%;
+        }
+        .rrss i {
+            font-size: 48px;
+        }
+    }
+    /* Media Ordenador (1280px) */
+    @media (min-width: 1280px){
+        p, span{
+            font-size: 20px !important;
+        }
+        .galerias label{
+            font-size: 22px;
+        }
+        /* Adultos */
+        .galeria_adult_desk {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        :is(.alany, .alejandro, .asdrubal, .atalanta, .bobbo, .coco, .cochita, .cristiano, .dog, .gody, .ika, .jerezana, .katu, .leo, .luz, .melk, .natasha, .roberto, .paco, .tik, .tok) {
+            display: block;
+            width: 29%;
+            margin: 2%;
+        }
+        :is(.alany, .alejandro, .asdrubal, .atalanta, .bobbo, .coco, .cochita, .cristiano, .dog, .gody, .ika, .jerezana, .katu, .leo, .luz, .melk, .natasha, .roberto, .paco, .tik, .tok) img{
+            margin-inline: 20px;
+        }
+        :is(.alany_text, .alejandro_text, .asdrubal_text, .atalanta_text, .bobbo_text, .coco_text, .cochita_class, .cristiano_text, .dog_text, .gody_text, .ika_text, .jerezana_text, .katu_text, .leo_text, .luz_text, .melk_text, .natasha_text, .roberto_text, .paco_text, .tik_text, .tok_text) {
+            width: 92%;
+            margin-inline: 10px;
+          }
+        /* Cachorros */
+        .galeria_cachorros_desk {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        :is(.vera,.douglas,.matias,.thena,.saba,.laiza,.tiana,.trosky,.tora,.zen,.carlitos,.kuka,.lelia,.dr_dones,.capone){
+            display: block;
+            margin: 2% 4%;
+        }
+        :is(.havock,.alaska,.indigo,.bomsai,.banshee,.ciclope.havock,.alaska,.indigo,.bomsai,.banshee,.ciclope){
+            display: block;
+            margin: 2% 2%;
+        }
+        /* Gatos */
+        .slide-inner {
+            height: 483px;
+        }
+        .galeria_gatos img{
+            width: 558px;
+        }
+        /* Cerdos */
+        .galeria_cerdos img {
+            margin-inline: 14%;
+        }
+    }
+ 
